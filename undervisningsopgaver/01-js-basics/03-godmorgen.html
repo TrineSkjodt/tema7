@@ -9,20 +9,25 @@
 </head>
 
 <body>
-    <input type="tekst" id="navn">
-    <button>
-        klik og kig i konsollen
-    </button>
+
     <script>
-        document.querySelector("button").addEventListener("click", buttonClicked);
+        let time = new Date().getHours();
 
-        function buttonClicked() {
-            let brugerNavn = document.querySelector("#navn").value;
-            console.log(`Tillykke dit navn er ${brugerNavn}`);
-
+        if (time < 6) {
+            consol.log("Godnat!")
+        } else if (time < 11) {
+            consol.log("Godmorgen!")
+        } else if (time < 19) {
+            console.log("Goddag!")
+        } else {
+            console.log("Godaften!")
         }
 
     </script>
 </body>
 
 </html>
+Godmorgen mellem kl. 5 og kl 10,
+Goddag mellem kl 10 og 18,
+Godaften mellem 18 og 24 og
+Godnat mellem 24 og 5.
