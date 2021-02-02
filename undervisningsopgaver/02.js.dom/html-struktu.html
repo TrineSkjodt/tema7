@@ -6,6 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html struktur</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            padding-left: 3.5%;
+        }
+
+        p {
+            display: flex;
+            max-width: 640px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        main {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+    </style>
 </head>
 
 <body>

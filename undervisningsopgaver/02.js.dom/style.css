@@ -1,8 +1,9 @@
+/*
 section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 5px;
-    padding-left: 3.5%;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
 
 h1 {
@@ -20,4 +21,19 @@ p {
 
 footer {
     text-align: center;
+    margin-top: 40px;
 }
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid black;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}*/
