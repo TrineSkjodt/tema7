@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html struktur</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            padding-left: 0;
+        }
+
+        p {
+            display: flex;
+            max-width: 640px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        main {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Øvelse 1</h1>
+    </header>
+
+    <main>
+        <h2>Bylivet</h2>
+        <section>
+            <article>
+                <img src="billeder/placeimg_640_480_any-2.jpg" alt="billede1">
+                <h3>London</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, quos harum tempora. Maiores deserunt laboriosam minus quisquam, temporibus consectetur nihil itaque rerum hic molestias aspernatur nam impedit similique, cumque enim!</p>
+            </article>
+            <article>
+                <img src="billeder/placeimg_640_480_any.jpg" alt="billede2">
+                <h3>New York</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus fugit optio qui, commodi quibusdam provident aliquam recusandae. Veritatis quaerat ipsam nobis voluptatum expedita adipisci, saepe iusto, reiciendis odit itaque culpa.</p>
+            </article>
+        </section>
+    </main>
+    <footer>Storbyer</footer>
+    <script>
+        const header = document.querySelector("header");
+        header.textContent;
+        console.log(header.textContent);
+
+        const overskrifth1 = document.querySelector("h1");
+        overskrifth1.textContent;
+        console.log(overskrifth1.textContent);
+
+        const main = document.querySelector("main");
+        main.textContent;
+        console.log(main.textContent);
+
+        const underOverskrifth2 = document.querySelector("h2");
+        underOverskrifth2.textContent;
+        console.log(underOverskrifth2.textContent);
+
+        const section = document.querySelector("section");
+        section.textContent;
+        console.log(section.textContent);
+
+        const article = document.querySelector("article");
+        article.textContent;
+        console.log(article.textContent);
+
+        const billede = document.querySelector("img");
+        billede.textContent;
+        console.log(billede.textContent);
+
+        const underOverskrifth3 = document.querySelector("h3");
+        underOverskrifth3.textContent;
+        console.log(underOverskrifth3.textContent);
+
+        const praragraf = document.querySelector("p");
+        praragraf.textContent;
+        console.log(praragraf.textContent);
+
+        const footer = document.querySelector("footer");
+        footer.textContent;
+        console.log(footer.textContent);
+
+    </script>
+</body>
+
+
+</html>
