@@ -72,33 +72,28 @@
     <footer>This is the Footer</footer>
     <script>
         const overskrifth1 = document.querySelector("h1");
-        overskrifth1.textContent;
-        overskrifth1.textContent = "Titel h1";
+        overskrifth1.textContent = "Billedegalleri";
         console.log(overskrifth1.textContent);
 
-        const underOverskrifth2 = document.querySelector("h2");
-        underOverskrifth2.textContent;
-        underOverskrifth2.textContent = "Undertitel h2";
-        console.log(underOverskrifth2.textContent);
+        const artikel1h3 = document.querySelector("article:first-child h3");
+        artikel1h3.textContent = "Dette er en overskrift i artikel 1";
+        console.log(artikel1h3.textContent);
+
+        const artikel1p = document.querySelector("article:first-child p");
+        artikel1p.textContent = "Dette er teksten i artikel 1"
+        console.log(artikel1p.textContent);
+
+        const artikel2 = document.querySelector("article:nth-child(2)");
+        artikel2.innerHTML = "<img src=billeder/placeimg_640_480_any.jpg alt=billede2><h3>Dette er overskrift i artikel 2</h3><p>Dette er <b>teksten</b> i artikel 2</p>";
+        console.log(artikel2.innerHTML);
 
         const underOverskrifth3 = document.querySelector("h3");
         underOverskrifth3.textContent;
-        underOverskrifth3.textContent = "Artikel h3";
         console.log(underOverskrifth3.textContent);
 
         const praragraf = document.querySelector("p");
         praragraf.textContent;
-        praragraf.textContent = "Dette er en Paragraf, også kaldet en  Brødtekst";
         console.log(praragraf.textContent);
-
-        const billede = document.querySelector("img");
-        billede.textContent;
-        console.log(billede.textContent);
-
-        const footer = document.querySelector("footer");
-        footer.textContent;
-        footer.textContent = "Dette er Footeren"
-        console.log(footer.textContent);
 
     </script>
 </body>
