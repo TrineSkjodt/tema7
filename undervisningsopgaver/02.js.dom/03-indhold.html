@@ -86,7 +86,7 @@
         billede1.src = "billeder/1.jpg";
         billede1.alt = "Nyt Billede";
 
-        const billede2 = document.querySelector("article:nth-child(2) img");
+        const billede2 = document.querySelector("article:nth-child(2)");
         console.log(billede2);
         billede2.src = "billeder/2.jpg";
         billede2.alt = "Nyt Billede";
@@ -104,7 +104,7 @@
         console.log(artikel1p.textContent);
 
         const artikel2 = document.querySelector("article:nth-child(2)");
-        artikel2.innerHTML = "<img src=billeder/placeimg_640_480_any.jpg alt=billede2><h3>Dette er overskrift i artikel 2</h3><p>Dette er <b>teksten</b> i artikel 2</p>";
+        artikel2.innerHTML = "<img src=billeder/placeimg_640_480_any.jpg alt=billede2><h3>Dette er overskrift i artikel 2</h3><p>Dette er <b> teksten</b> i artikel 2</p>";
         console.log(artikel2.innerHTML);
 
         const underOverskrifth3 = document.querySelector("h3");
