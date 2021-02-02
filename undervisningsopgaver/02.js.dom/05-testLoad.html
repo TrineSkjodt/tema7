@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="da">
 
 <head>
     <meta charset="utf-8">
@@ -58,12 +58,12 @@
         <h2>Undertitel</h2>
         <section>
             <article>
-                <img src="billeder/placeimg_640_480_any-2.jpg" alt="billede1">
+                <img src="billeder/3.jpg" alt="billede1">
                 <h3>Artikel 1</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, quos harum tempora. Maiores deserunt laboriosam minus quisquam, temporibus consectetur nihil itaque rerum hic molestias aspernatur nam impedit similique, cumque enim!</p>
             </article>
             <article>
-                <img src="billeder/placeimg_640_480_any.jpg" alt="billede2">
+                <img src="billeder/4.jpg" alt="billede2">
                 <h3>Artikel 2</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus fugit optio qui, commodi quibusdam provident aliquam recusandae. Veritatis quaerat ipsam nobis voluptatum expedita adipisci, saepe iusto, reiciendis odit itaque culpa.</p>
             </article>
@@ -73,32 +73,54 @@
     <script>
         document.addEventListener("DOMContentLoaded", start);
 
+
+
         function start() {
             console.log("DOM er loadet");
 
+
+
+
             const pic1 = document.querySelector("article:first-child img");
             console.log(pic1);
-            pic1.src = "code_image.jpg";
+            pic1.src = "billeder/1.jpg";
             pic1.alt = "kode billede";
+
+
 
             const pic2 = document.querySelector("article:nth-child(2) img");
             console.log(pic2);
-            pic2.src = "stock_billede.jpg";
+            pic2.src = "billeder/2.jpg";
             pic2.alt = "stock billede af computer";
+
+
 
             let mainSection = document.querySelector("section");
 
+
+
             let newArticle = document.createElement("article");
+
+
 
             let overskrift = document.createElement("h3");
 
-            let overskriftText = document.createTextNode("Article 3");
+
+
+            let overskriftText = document.createTextNode("Artikel 3");
+
+
 
             let newP = document.createElement("p");
-            newP.textContent = "Hej Hej";
+            newP.textContent = "Hej Social Media";
+
+
 
             let newImg = document.createElement("img");
-            newImg.src = "code_image.jpg";
+            newImg.src = "billeder/5.jpg";
+
+
+
 
 
             mainSection.appendChild(newArticle);

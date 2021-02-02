@@ -58,12 +58,12 @@
         <h2>Undertitel</h2>
         <section>
             <article>
-                <img src="billeder/placeimg_640_480_any-2.jpg" alt="billede1">
+                <img src="billeder/1.jpg" alt="billede1">
                 <h3>Artikel 1</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, quos harum tempora. Maiores deserunt laboriosam minus quisquam, temporibus consectetur nihil itaque rerum hic molestias aspernatur nam impedit similique, cumque enim!</p>
             </article>
             <article>
-                <img src="billeder/placeimg_640_480_any.jpg" alt="billede2">
+                <img src="billeder/2.jpg">
                 <h3>Artikel 2</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus fugit optio qui, commodi quibusdam provident aliquam recusandae. Veritatis quaerat ipsam nobis voluptatum expedita adipisci, saepe iusto, reiciendis odit itaque culpa.</p>
             </article>
@@ -71,52 +71,92 @@
     </main>
     <footer>This is the Footer</footer>
     <script>
-        //        const pic1 = document.querySelector("article:nth-child(1) img");
-        //        console.log(pic1);
-        //        pic1.src = "billeder/1.jpg";
-        //        pic1.alt = "Det nye billede";
-        //
-        //        const pic2 = document.querySelector("article:nth-child(2) img");
-        //        console.log(pic2);
-        //        pic2.src = "billeder/2.jpg";
-        //        pic2.alt = "Det nye billede";
+        /*const overskrift = document.querySelector("h1");
+overskrift.textContent = "Billedgalleri";
+console.log(overskrift.textContent);
 
-        const billede1 = document.querySelector("article:first-child img");
-        console.log(billede1);
-        billede1.src = "billeder/1.jpg";
-        billede1.alt = "Nyt Billede";
 
-        const billede2 = document.querySelector("article:nth-child(2) img");
-        console.log(billede2);
-        billede2.src = "billeder/2.jpg";
-        billede2.alt = "Nyt Billede";
 
-        const overskrifth1 = document.querySelector("h1");
-        overskrifth1.textContent = "Billedegalleri";
-        console.log(overskrifth1.textContent);
+const underoverskrift = document.querySelector("h2");
+underoverskrift.textContent;
+console.log(underoverskrift.textContent);
 
-        const artikel1h3 = document.querySelector("article:first-child h3");
-        artikel1h3.textContent = "Dette er en overskrift i artikel 1";
-        console.log(artikel1h3.textContent);
 
-        const artikel1p = document.querySelector("article:first-child p");
-        artikel1p.textContent = "Dette er teksten i artikel 1"
-        console.log(artikel1p.textContent);
 
-        const artikel2 = document.querySelector("article:nth-child(2)");
-        artikel2.innerHTML = "<img src=billeder/placeimg_640_480_any.jpg alt=billede2><h3>Dette er overskrift i artikel 2</h3><p>Dette er <b>teksten</b> i artikel 2</p>";
-        console.log(artikel2.innerHTML);
+const article1H3 = document.querySelector("article:first-child h3");
+article1H3.textContent = "Dette er en artikel titel"
+console.log(article1H3.innerHTML);
 
-        const underOverskrifth3 = document.querySelector("h3");
-        underOverskrifth3.textContent;
-        console.log(underOverskrifth3.textContent);
 
-        const praragraf = document.querySelector("p");
-        praragraf.textContent;
-        console.log(praragraf.textContent);
+
+const article1P = document.querySelector("article:first-child p");
+article1P.textContent = "Dette er tekst til en artikel"
+console.log(article1P.innerHTML);
+
+
+
+const article2 = document.querySelector("article:nth-child(2)");
+article2.innerHTML = "<img src=https://placeimg.com/640/480/any alt=image> <h3>Hej</h3> <p>Det her er <b>fed</b> tekst</p>"
+console.log(article2.innerHTML);
+
+
+
+const footer = document.querySelector("footer");
+footer.textContent;
+console.log(footer.textContent);*/
+
+
+
+
+        const pic1 = document.querySelector("article:first-child img");
+        console.log(pic1);
+        pic1.src = "billeder/1.jpg";
+        pic1.alt = "kode billede";
+
+
+
+        const pic2 = document.querySelector("article:nth-child(2) img");
+        console.log(pic2);
+        pic2.src = "billeder/2.jpg";
+        pic2.alt = "stock billede af computer";
+
+
+
+        let mainSection = document.querySelector("section");
+
+
+
+        let newArticle = document.createElement("article");
+
+
+
+        let overskrift = document.createElement("h3");
+
+
+
+        let overskriftText = document.createTextNode("Artikel 3");
+
+
+
+        let newP = document.createElement("p");
+        newP.textContent = "Hej Social Media";
+
+
+
+        let newImg = document.createElement("img");
+        newImg.src = "billeder/5.jpg";
+
+
+
+
+
+        mainSection.appendChild(newArticle);
+        overskrift.appendChild(overskriftText);
+        newArticle.appendChild(newImg);
+        newArticle.appendChild(overskrift);
+        newArticle.appendChild(newP);
 
     </script>
 </body>
-
 
 </html>
