@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html struktur</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            padding-left: 0;
+        }
+
+        p {
+            display: flex;
+            max-width: 640px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        main {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Titel</h1>
+    </header>
+
+    <main>
+        <h2>Undertitel</h2>
+        <section>
+            <article>
+                <img src="billeder/placeimg_640_480_any-2.jpg" alt="billede1">
+                <h3>Artikel 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, quos harum tempora. Maiores deserunt laboriosam minus quisquam, temporibus consectetur nihil itaque rerum hic molestias aspernatur nam impedit similique, cumque enim!</p>
+            </article>
+            <article>
+                <img src="billeder/placeimg_640_480_any.jpg" alt="billede2">
+                <h3>Artikel 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus fugit optio qui, commodi quibusdam provident aliquam recusandae. Veritatis quaerat ipsam nobis voluptatum expedita adipisci, saepe iusto, reiciendis odit itaque culpa.</p>
+            </article>
+        </section>
+    </main>
+    <footer>This is the Footer</footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            console.log("DOM er loadet");
+
+            const pic1 = document.querySelector("article:first-child img");
+            console.log(pic1);
+            pic1.src = "code_image.jpg";
+            pic1.alt = "kode billede";
+
+            const pic2 = document.querySelector("article:nth-child(2) img");
+            console.log(pic2);
+            pic2.src = "stock_billede.jpg";
+            pic2.alt = "stock billede af computer";
+
+            let mainSection = document.querySelector("section");
+
+            let newArticle = document.createElement("article");
+
+            let overskrift = document.createElement("h3");
+
+            let overskriftText = document.createTextNode("Article 3");
+
+            let newP = document.createElement("p");
+            newP.textContent = "Hej Hej";
+
+            let newImg = document.createElement("img");
+            newImg.src = "code_image.jpg";
+
+
+            mainSection.appendChild(newArticle);
+            overskrift.appendChild(overskriftText);
+            newArticle.appendChild(newImg);
+            newArticle.appendChild(overskrift);
+            newArticle.appendChild(newP);
+        }
+
+    </script>
+</body>
+
+</html>
