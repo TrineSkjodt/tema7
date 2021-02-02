@@ -11,13 +11,16 @@
 <body>
 
     <script>
-        let time = new Date().getHours();
-
-        if (time < 6) {
-            consol.log("Godnat!")
-        } else if (time < 11) {
-            consol.log("Godmorgen!")
-        } else if (time < 19) {
+        //        Dette er er funktion som giver os et tal mellem 0-24.
+        const time = new Date().getHours();
+        console.log("Time", time);
+        //        Denne kan bruges hvis man selv vil definere et tidspunkt.
+        //        const time = 12;
+        if (time < 5) {
+            console.log("Godnat!")
+        } else if (time < 10) {
+            console.log("Godmorgen!")
+        } else if (time < 18) {
             console.log("Goddag!")
         } else {
             console.log("Godaften!")
