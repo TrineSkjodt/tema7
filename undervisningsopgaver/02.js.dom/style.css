@@ -15,6 +15,7 @@ h2 {
 
 p {
     display: flex;
+    max-width: 640px;
 }
 
 footer {
