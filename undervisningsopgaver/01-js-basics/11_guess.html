@@ -12,7 +12,11 @@
     <p>Gæt et tal mellem 0 og 20</p>
     <input type="text" id="guess">
     <button>Klik og se dit gæt</button>
+
     <script>
+        //      Math.random() - Giver et tilfældigt tal mellem 0-10.
+        //      Const = Konstant Variabel
+        //      Let = Variabel
         let nummer = Math.round(Math.random() * 20);
 
         document.querySelector("button").addEventListener("click", buttonClicked);
@@ -31,8 +35,28 @@
 
             console.log(resultat);
         }
+        //        Math.random() - Giver et tilfældigt tal mellem 0-10
+
+        //        const tilfaeldigtTal = Math.random(Math.random() * 20);
+        //        document.querySelector("button").addEventListener("click", guessTal);
+        //
+        //
+        //        function guessTal() {
+        //            const guess = document.querySelector("#gæt").value;
+        //            console.log("tilfaeldigTal", tilfaeldigtTal);
+        //            console.log("brugergæt", guess);
+        //            if (guess == tilfaeldigtTal) {
+        //                console.log("RIGTIG!");
+        //
+        //            } else if (guess < tilfaeldigtTal) {
+        //                console.log("For lavt");
+        //
+        //            } else
+        //                console.log("For højt");
+        //        }
 
     </script>
+
 </body>
 
 </html>
