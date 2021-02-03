@@ -73,32 +73,54 @@
     <script>
         document.addEventListener("DOMContentLoaded", start);
 
+
+
         function start() {
+
             console.log("DOM er loadet");
+
+
+
 
             const pic1 = document.querySelector("article:first-child img");
             console.log(pic1);
             pic1.src = "billeder/1.jpg";
             pic1.alt = "kode billede";
 
+
+
             const pic2 = document.querySelector("article:nth-child(2) img");
             console.log(pic2);
             pic2.src = "billeder/2.jpg";
             pic2.alt = "stock billede af computer";
 
+
+
             let mainSection = document.querySelector("section");
+
+
 
             let newArticle = document.createElement("article");
 
+
+
             let overskrift = document.createElement("h3");
+
+
 
             let overskriftText = document.createTextNode("Article 3");
 
+
+
             let newP = document.createElement("p");
-            newP.textContent = "Hej Social Media";
+            newP.textContent = "Hej Hej";
+
+
 
             let newImg = document.createElement("img");
             newImg.src = "billeder/5.jpg";
+
+
 
             mainSection.appendChild(newArticle);
             overskrift.appendChild(overskriftText);
@@ -106,14 +128,23 @@
             newArticle.appendChild(overskrift);
             newArticle.appendChild(newP);
 
+
+
+
             let tilfældigtTal = Math.round(Math.random() * 10);
             let element = document.querySelector("#image1");
+
+
+
             element.addEventListener("click", skiftBillede);
 
+
+
             function skiftBillede() {
-                image1.src = "billeder/6.jpg" + tilfældigtTal;
+                image1.src = "billeder/6" + tilfældigtTal;
                 console.log("billede er skiftet")
             }
+
         }
 
     </script>
