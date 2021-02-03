@@ -74,17 +74,37 @@
         const overskrifth1 = document.querySelector("h1");
         console.log(overskrifth1.textContent);
 
+
         const underOverskrifth2 = document.querySelector("h2");
         console.log(underOverskrifth2.textContent);
 
-        const underOverskrifth3 = document.querySelector("h3");
-        console.log(underOverskrifth3.textContent);
 
-        const praragraf = document.querySelector("p");
-        console.log(praragraf.textContent);
+        const article1h3 = document.querySelector("article:first-child h3");
+        console.log(article1h3.textContent);
 
-        const billede = document.querySelector("img");
-        console.log(billede.textContent);
+
+        const article2h3 = document.querySelector("article:nth-child(2) h3");
+        console.log(article2h3.textContent);
+
+
+        const paragraf1 = document.querySelector("article:first-child p");
+        console.log(paragraf1.textContent);
+
+        const paragraf2 = document.querySelector("article:nth-child(2) p");
+        console.log(paragraf2.textContent);
+
+        const billede1 = document.querySelector("article:first-child img");
+        billede1.textContent = "<img src=billeder/3.jpg";
+        console.log(billede1.textContent);
+
+        const billede2 = document.querySelector("article:nth-child(2) img");
+        billede2.textContent = "<img src=billeder/4.jpg";
+        console.log(billede2.textContent);
+
+
+        //        const billede = document.querySelector("img");
+        //        console.log(billede.textContent);
+
 
         const footer = document.querySelector("footer");
         console.log(footer.textContent);
