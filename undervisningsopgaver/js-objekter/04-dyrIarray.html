@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vis Dyr</title>
+    <title>Dyr Larray</title>
     <link rel="stylesheet" href="">
 </head>
 
@@ -23,32 +23,43 @@
     <script>
         document.addEventListener("DOMContentLoaded", start);
 
+
+
         function start() {
             console.log("dom er loaded");
 
-            let dyr = {
-                "navn": "Gris",
+
+
+            let dyr = [{
+                "navn": "gris",
                 "type": "pattedyr",
                 "billede": "http://mabe-kea.dk/E19/pics/pig.png",
                 "levested": "svinefarm"
-            };
-            console.log(`Dyr:${dyr.navn} Type:${dyr.type} Billede:${dyr.billede} Levested:${dyr.levested}`);
+            }, {
+                "navn": "frø",
+                "type": "amfibie",
+                "billede": "http://mabe-kea.dk/E19/pics/frog.png",
+                "levested": "vandhullet"
+            }, {
+                "navn": "ræv",
+                "type": "pattedyr",
+                "billede": "http://mabe-kea.dk/E19/pics/fox.png",
+                "levested": "skov"
+            }, {
+                "navn": "sild",
+                "type": "fisk",
+                "billede": "http://mabe-kea.dk/E19/pics/sild.jpg",
+                "levested": "havet"
+            }, {
+                "navn": "krokodille",
+                "type": "krybdyr",
+                "billede": "http://mabe-kea.dk/E19/pics/kroko.jpg",
+                "levested": "sflod"
+            }];
+            console.log(dyr);
 
-            const udskrivDyr = document.querySelector("#artikel");
-            const dyrNavn = `${dyr.navn}`;
-            udskrivDyr.querySelector("h3").textContent = dyrNavn;
-            udskrivDyr.querySelector("img").src = dyr.billede;
 
-            const dyrType = document.querySelector("p");
-            const dyrTypeNavn = `${dyr.type}`;
-            dyrType.textContent += dyrTypeNavn;
 
-            const dyrLevested = document.querySelector("p:nth-child(2)");
-            const dyrLevestedNavn = `${dyr.levested}`;
-            dyrLevested.textContent += dyrLevestedNavn;
         }
-
     </script>
-</body>
-
-</html>
+</body></html>
