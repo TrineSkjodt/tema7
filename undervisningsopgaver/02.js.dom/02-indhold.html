@@ -95,8 +95,8 @@
 
 
         const paragraf1 = document.querySelector("article:first-child p");
-        paragraf1.textContent = "Dette er teksten i Artikel 1"
-        console.log(paragraf1.textContent);
+        paragraf1.innerHTML = "Dette er teksten i <b>Artikel 1</b>"
+        console.log(paragraf1.innerHTML);
 
         const paragraf2 = document.querySelector("article:nth-child(2) p");
         paragraf2.textContent = "Dette er teksten i Artikel 2"
