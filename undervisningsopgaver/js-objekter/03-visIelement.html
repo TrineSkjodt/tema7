@@ -16,10 +16,10 @@
     <header></header>
     <main>
         <article id="artikel">
-            <h3></h3>
-            <img>
-            <p>Type</p>
-            <p>Levested</p>
+            <h3>Gris</h3>
+            <img src="http://mabe-kea.dk/E19/pics/pig.png">
+            <p>Type:</p>
+            <p>Levested:</p>
         </article>
     </main>
     <script>
@@ -30,22 +30,25 @@
 
             let dyr = {
                 "navn": "Gris",
-                "type": "pattedyr",
+                "type": "Pattedyr",
                 "billede": "http://mabe-kea.dk/E19/pics/pig.png",
-                "levested": "svinefarm"
+                "levested": "Svinefarm"
             };
             console.log(`Dyr:${dyr.navn} Type:${dyr.type} Billede:${dyr.billede} Levested:${dyr.levested}`);
+
 
             const udskrivDyr = document.querySelector("#artikel");
             const dyrNavn = `${dyr.navn}`;
             udskrivDyr.querySelector("h3").textContent = dyrNavn;
             udskrivDyr.querySelector("img").src = dyr.billede;
 
+
             const dyrType = document.querySelector("p");
             const dyrTypeNavn = `${dyr.type}`;
             dyrType.textContent += dyrTypeNavn;
 
-            const dyrLevested = document.querySelector("p:nth-child(2)");
+
+            const dyrLevested = document.querySelector("p:nth-child(4)");
             const dyrLevestedNavn = `${dyr.levested}`;
             dyrLevested.textContent += dyrLevestedNavn;
         }
