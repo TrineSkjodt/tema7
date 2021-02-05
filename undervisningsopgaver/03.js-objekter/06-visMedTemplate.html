@@ -16,8 +16,8 @@
             <article class="dyr">
                 <h3>Dyr</h3>
                 <img>
-                <p>Type:</p>
-                <p>Levested:</p>
+                <p class="type">Type:</p>
+                <p class="levested">Levested:</p>
             </article>
         </template>
     </main>
@@ -59,12 +59,15 @@
                 let klon = artikelTemplate.cloneNode(true).content;
                 klon.querySelector("h3").textContent = dyr.navn;
                 klon.querySelector("img").src = dyr.billede;
-                // Husk alti alt tag ved ved indsættelse eller oprettelse af img.
+                // Husk altid alt tag ved ved indsættelse eller oprettelse af img.
                 klon.querySelector("img").alt = dyr.navn;
-                klon.querySelector("p").textContent = dyr.type;
-                klon.querySelector("p").textContent = dyr.levested;
+                klon.querySelector(".type").textContent = dyr.type;
+                klon.querySelector(".levested").textContent = dyr.levested;
                 container.appendChild(klon);
             })
         }
+
     </script>
-</body></html>
+</body>
+
+</html>
